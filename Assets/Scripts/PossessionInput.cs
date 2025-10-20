@@ -1,9 +1,9 @@
-/*using UnityEngine;
+using UnityEngine;
 
 public class PossessionInput : MonoBehaviour
 {
-    // The player's movement component.
-    public PlayerMovement PlayerMovement;
+    // Things to disable while the player is possessing something.
+    public MonoBehaviour[] DisableWhilePossessing;
     // Possession target the player is able to possess.
     public PossessionTarget PossessionTarget;
 
@@ -22,8 +22,10 @@ public class PossessionInput : MonoBehaviour
                 _currentPossession.PossessionEnded.Invoke();
                 _currentPossession = null;
 
-                // Enable player movement.
-                PlayerMovement.enabled = true;
+                foreach (MonoBehaviour mono in DisableWhilePossessing)
+                {
+                    mono.enabled = true;
+                }
             }
         }
         // Else, if we have a target and try to possess it.
@@ -33,8 +35,10 @@ public class PossessionInput : MonoBehaviour
             _currentPossession = PossessionTarget;
             _currentPossession.PossessionStarted.Invoke();
 
-            // Disable player movement.
-            PlayerMovement.enabled = false;
+            foreach (MonoBehaviour mono in DisableWhilePossessing)
+            {
+                mono.enabled = false;
+            }
         }
     }
-}*/
+}
