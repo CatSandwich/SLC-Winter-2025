@@ -5,4 +5,9 @@ public class PossessionTarget : MonoBehaviour
 {
     public UnityEvent PossessionStarted;
     public UnityEvent PossessionEnded;
+
+    private void Start()
+    {
+        PossessionEnded.Invoke();
+    }
 }
