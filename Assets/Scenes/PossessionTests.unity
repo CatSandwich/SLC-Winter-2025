@@ -166,7 +166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FlightScript
   Rigidbody: {fileID: 574643063}
   JumpPower: 10
-  GroundCheck: {fileID: 0}
+  FlightGravity: 3
   JumpKey: 32
 --- !u!212 &574643061
 SpriteRenderer:
