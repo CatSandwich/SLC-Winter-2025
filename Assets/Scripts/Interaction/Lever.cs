@@ -10,5 +10,14 @@ public class Lever : MonoBehaviour
     public void Toggle()
     {
         IsOn = !IsOn;
+
+        if (IsOn)
+        {
+            TurnedOn.Invoke();
+        }
+        else
+        {
+            TurnedOff.Invoke();
+        }
     }
 }
