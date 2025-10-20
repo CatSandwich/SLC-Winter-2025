@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using Assets.Scripts;
 using UnityEngine;
 
@@ -10,10 +11,7 @@ public class Interactor : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.F))
         {
-            foreach (Interactable interactable in Overlapping)
-            {
-                interactable.Interacted.Invoke(this);
-            }
+            Overlapping.FirstOrDefault()?.Interacted.Invoke(this);
         }
     }
 
