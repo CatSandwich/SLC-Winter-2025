@@ -4,30 +4,21 @@ using UnityEngine.Experimental.Rendering;
 
 public class Possessable : MonoBehaviour
 {
-    public bool StartPossessed;
+    // Camera rendering a preview of this object.
     public Camera PreviewCamera;
+    // Objects to enable only while this object is possessed.
     public GameObject[] EnableWhilePossessedObjects;
+    // Components to enable only while this object is possessed.
     public MonoBehaviour[] EnableWhilePossessedComponents;
+    // Raised when this object is possessed.
     public UnityEvent PossessionStarted;
+    // Raised when this object is no longer possessed.
     public UnityEvent PossessionEnded;
+    // Key to stop possessing this object.
     public KeyCode UnpossessKey = KeyCode.Escape;
 
     public RenderTexture PreviewTexture { get; private set; }
     private Possessable _possessedBy;
-
-    public void GetPossessedBy(Possessable from)
-    {
-        _possessedBy = from;
-        from.PossessionEnded.Invoke();
-        PossessionStarted.Invoke();
-    }
-
-    private void Unpossess()
-    {
-        PossessionEnded.Invoke();
-        _possessedBy.PossessionStarted.Invoke();
-        _possessedBy = null;
-    }
 
     private void Awake()
     {
@@ -37,6 +28,10 @@ public class Possessable : MonoBehaviour
             PreviewTexture.Create();
             PreviewCamera.targetTexture = PreviewTexture;
         }
+
+        PossessionStarted.AddListener(() => SetWhilePossessedStates(true));
+        PossessionEnded.AddListener(() => SetWhilePossessedStates(false));
+        PossessionEnded.Invoke();
     }
 
     private void OnDestroy()
@@ -44,29 +39,6 @@ public class Possessable : MonoBehaviour
         if (PreviewCamera)
         {
             PreviewCamera.targetTexture.Release();
-        }
-    }
-
-    private void Start()
-    {
-        PossessionStarted.AddListener(() => SetWhilePossessedStates(true));
-        PossessionEnded.AddListener(() => SetWhilePossessedStates(false));
-
-        if (StartPossessed)
-        {
-            PossessionStarted.Invoke();
-        }
-        else
-        {
-            PossessionEnded.Invoke();
-        }
-    }
-
-    private void Update()
-    {
-        if (_possessedBy && Input.GetKeyDown(UnpossessKey))
-        {
-            Unpossess();
         }
     }
 

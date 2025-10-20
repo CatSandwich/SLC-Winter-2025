@@ -8,12 +8,11 @@ public class PossessionPedestal : MonoBehaviour
     public Possessable Target;
     public MeshRenderer Preview;
 
+    private PossessionStack _stack;
+
     public void OnInteract(Interactor interactor)
     {
-        if (interactor.gameObject.TryGetComponent(out Possessable current))
-        {
-            Target.GetPossessedBy(current);
-        }
+        _stack.Push(Target);
     }
 
     private void Start()
@@ -24,5 +23,7 @@ public class PossessionPedestal : MonoBehaviour
             Preview.material.mainTexture = Target.PreviewCamera.targetTexture;
             Preview.material.color = new Color(1, 1, 1, .7f);
         }
+
+        _stack = FindAnyObjectByType<PossessionStack>();
     }
 }
