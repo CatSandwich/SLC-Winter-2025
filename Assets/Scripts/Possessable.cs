@@ -4,12 +4,19 @@ using UnityEngine.Experimental.Rendering;
 
 public class Possessable : MonoBehaviour
 {
+    // Should this object be controlled at the start?
     public bool StartPossessed;
+    // Camera rendering a preview of this object.
     public Camera PreviewCamera;
+    // Objects to enable only while this object is possessed.
     public GameObject[] EnableWhilePossessedObjects;
+    // Components to enable only while this object is possessed.
     public MonoBehaviour[] EnableWhilePossessedComponents;
+    // Raised when this object is possessed.
     public UnityEvent PossessionStarted;
+    // Raised when this object is no longer possessed.
     public UnityEvent PossessionEnded;
+    // Key to stop possessing this object.
     public KeyCode UnpossessKey = KeyCode.Escape;
 
     public RenderTexture PreviewTexture { get; private set; }
