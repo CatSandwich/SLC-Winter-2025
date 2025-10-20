@@ -6,15 +6,28 @@ public class FlightScript : MonoBehaviour
     public Rigidbody2D Rigidbody;
     public float JumpPower;
 
+    //public GroundCheck GroundCheck;
+
     public KeyCode JumpKey;
 
     // Update is called once per frame
     void Update()
     {
-        // Jump.
-        if (Input.GetKeyDown(JumpKey))
+        /*while (!(GroundCheck.IsGrounded))
         {
-            Rigidbody.linearVelocity += Vector2.up * JumpPower;
+            transform.position += Vector3.down * 5;
+        }*/
+
+        // Up.
+        if (Input.GetKey(JumpKey))
+        {
+            transform.position += Vector3.up * JumpPower * Time.deltaTime;
+        }
+
+        // Down.
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            transform.position += Vector3.down * JumpPower * Time.deltaTime;
         }
     }
 }
