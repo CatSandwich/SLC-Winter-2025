@@ -826,7 +826,7 @@ GameObject:
   - component: {fileID: 1357582660}
   - component: {fileID: 1357582663}
   - component: {fileID: 1357582665}
-  - component: {fileID: 1357582664}
+  - component: {fileID: 1357582667}
   - component: {fileID: 1357582666}
   m_Layer: 0
   m_Name: Player
@@ -972,22 +972,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
---- !u!114 &1357582664
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1357582659}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 018373a4a00219b46abad985328d1d83, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  Rigidbody: {fileID: 1357582660}
-  JumpPower: 8
-  HorizontalSpeed: 6
-  JumpKey: 32
 --- !u!114 &1357582665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1012,11 +996,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 1357582659}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a46a07ca958a76d48829d7873d8c9ca6, type: 3}
+  m_Script: {fileID: 11500000, guid: 33e13e96c32e26149879cbf25f375632, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PossessionInput
-  PlayerMovement: {fileID: 1357582664}
-  PossessionTarget: {fileID: 1216913792}
+  m_EditorClassIdentifier: Assembly-CSharp::HorizontalMovement
+  HorizontalSpeed: 6
+--- !u!114 &1357582667
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1357582659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 592e58532954db74c890e6b127699fb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::JumpScript
+  Rigidbody: {fileID: 1357582660}
+  JumpPower: 5
+  GroundCheck: {fileID: 1266016518}
+  JumpKey: 32
 --- !u!1001 &2007170476
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -1,4 +1,4 @@
-using UnityEngine;
+/*using UnityEngine;
 
 public class PossessionInput : MonoBehaviour
 {
@@ -37,4 +37,4 @@ public class PossessionInput : MonoBehaviour
             PlayerMovement.enabled = false;
         }
     }
-}
+}*/
