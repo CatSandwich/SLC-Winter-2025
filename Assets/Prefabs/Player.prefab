@@ -434,6 +434,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HorizontalMovement
   HorizontalSpeed: 6
+  anim: {fileID: 55706841155257416}
 --- !u!114 &55706841155257416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -472,7 +473,6 @@ MonoBehaviour:
   PossessionEnded:
     m_PersistentCalls:
       m_Calls: []
-  UnpossessKey: 0
   possessedAnim: {fileID: 55706841155257416}
 --- !u!114 &1045303972889428976
 MonoBehaviour:
