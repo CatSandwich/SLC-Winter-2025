@@ -14,11 +14,8 @@ public class Possessable : MonoBehaviour
     public UnityEvent PossessionStarted;
     // Raised when this object is no longer possessed.
     public UnityEvent PossessionEnded;
-    // Key to stop possessing this object.
-    public KeyCode UnpossessKey = KeyCode.Escape;
 
     public RenderTexture PreviewTexture { get; private set; }
-    private Possessable _possessedBy;
     public CreatureAnim possessedAnim;
 
     private void Awake()
