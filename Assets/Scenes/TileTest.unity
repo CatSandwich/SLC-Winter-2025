@@ -9005,6 +9005,9 @@ MonoBehaviour:
   - {fileID: 855985728}
   EnableWhilePossessedComponents:
   - {fileID: 1216913793}
+  - {fileID: 1216913794}
+  DisableWhilePossessedComponents:
+  - {fileID: 1357582665}
   PossessionStarted:
     m_PersistentCalls:
       m_Calls: []
@@ -9147,7 +9150,7 @@ GameObject:
   - component: {fileID: 1357582669}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9350,6 +9353,8 @@ MonoBehaviour:
   EnableWhilePossessedComponents:
   - {fileID: 1357582666}
   - {fileID: 1357582667}
+  - {fileID: 1357582669}
+  DisableWhilePossessedComponents: []
   PossessionStarted:
     m_PersistentCalls:
       m_Calls: []
