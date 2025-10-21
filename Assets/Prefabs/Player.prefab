@@ -289,7 +289,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::JumpScript
   Rigidbody: {fileID: 2038913584628051370}
-  JumpPower: 5
+  JumpPower: 8
   GroundCheck: {fileID: 5706515758429811899}
   JumpKey: 32
 --- !u!114 &6039000188192796373
