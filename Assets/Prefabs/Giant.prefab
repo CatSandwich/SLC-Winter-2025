@@ -32,13 +32,17 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6758400738000601640, guid: 03947798d529d4c429cdb13912599129, type: 3}
+      propertyPath: CanBreakWalls
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8489393470830472447, guid: 03947798d529d4c429cdb13912599129, type: 3}
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 46ff93935b10a0e41953326af36559fe, type: 2}
     - target: {fileID: 8620241196688516679, guid: 03947798d529d4c429cdb13912599129, type: 3}
       propertyPath: m_Name
-      value: Giant Variant
+      value: Giant
       objectReference: {fileID: 0}
     - target: {fileID: 9133818263396341959, guid: 03947798d529d4c429cdb13912599129, type: 3}
       propertyPath: m_LocalScale.x

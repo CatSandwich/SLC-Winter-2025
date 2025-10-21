@@ -6,6 +6,7 @@ using UnityEngine;
 public class Interactor : MonoBehaviour
 {
     public bool CanPressButton;
+    public bool CanBreakWalls;
 
     private List<Interactable> Overlapping { get; } = new();
 
@@ -27,6 +28,19 @@ public class Interactor : MonoBehaviour
         if (CanPressButton && other.gameObject.TryGetComponentInChildren(out Button button))
         {
             button.Overlaps++;
+        }
+
+        if (CanBreakWalls && other.gameObject.TryGetComponentInChildren(out BreakableWall breakableWall))
+        {
+            Destroy(other.gameObject);
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (CanBreakWalls && collision.gameObject.TryGetComponentInChildren(out BreakableWall breakableWall))
+        {
+            Destroy(collision.gameObject);
         }
     }
 
