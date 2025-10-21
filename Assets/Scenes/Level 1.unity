@@ -8146,6 +8146,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a21243284c89092489f529a3788143f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PossessionTarget
+--- !u!114 &1357582669 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 55706841155257416, guid: 03947798d529d4c429cdb13912599129, type: 3}
+  m_PrefabInstance: {fileID: 2450880144224106767}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72c12ec3881ac1b478a709250f5ef16c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CreatureAnim
 --- !u!1 &1858047629
 GameObject:
   m_ObjectHideFlags: 0
@@ -18996,6 +19007,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6039000188192796373, guid: 03947798d529d4c429cdb13912599129, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 1357582669}
     - target: {fileID: 8620241196688516679, guid: 03947798d529d4c429cdb13912599129, type: 3}
       propertyPath: m_Name
       value: Player
