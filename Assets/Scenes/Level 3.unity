@@ -131,6 +131,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rat
       objectReference: {fileID: 0}
+    - target: {fileID: 2680639090353412637, guid: bf8e2db6e6cd05b4083517cf386ce5cb, type: 3}
+      propertyPath: m_Color.b
+      value: 0.5019608
+      objectReference: {fileID: 0}
+    - target: {fileID: 2680639090353412637, guid: bf8e2db6e6cd05b4083517cf386ce5cb, type: 3}
+      propertyPath: m_Color.g
+      value: 0.78431374
+      objectReference: {fileID: 0}
     - target: {fileID: 7658847007122264768, guid: bf8e2db6e6cd05b4083517cf386ce5cb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10
