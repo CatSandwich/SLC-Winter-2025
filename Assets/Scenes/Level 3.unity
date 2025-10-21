@@ -133,11 +133,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7658847007122264768, guid: bf8e2db6e6cd05b4083517cf386ce5cb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.13
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7658847007122264768, guid: bf8e2db6e6cd05b4083517cf386ce5cb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.49
+      value: -4.8
       objectReference: {fileID: 0}
     - target: {fileID: 7658847007122264768, guid: bf8e2db6e6cd05b4083517cf386ce5cb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -14333,6 +14333,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 918284193111380583, guid: 98d6b87868d1c954b8db954f7e3c86bd, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4378276318292160579, guid: 98d6b87868d1c954b8db954f7e3c86bd, type: 3}
       propertyPath: m_Name
       value: Lever (1)
@@ -14462,7 +14466,7 @@ GameObject:
   - component: {fileID: 985782227}
   m_Layer: 0
   m_Name: Door2
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14777,6 +14781,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6039000188192796373, guid: 03947798d529d4c429cdb13912599129, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 1694763641}
     - target: {fileID: 8620241196688516679, guid: 03947798d529d4c429cdb13912599129, type: 3}
       propertyPath: m_Name
       value: Player
@@ -14846,6 +14854,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 918284193111380583, guid: 98d6b87868d1c954b8db954f7e3c86bd, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4378276318292160579, guid: 98d6b87868d1c954b8db954f7e3c86bd, type: 3}
       propertyPath: m_Name
       value: Lever
@@ -15038,11 +15050,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6604018083995816226, guid: d046e1f8307dfaa428fe724b1d8abec5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.49
+      value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: 6604018083995816226, guid: d046e1f8307dfaa428fe724b1d8abec5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.98
+      value: -9
       objectReference: {fileID: 0}
     - target: {fileID: 6604018083995816226, guid: d046e1f8307dfaa428fe724b1d8abec5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -15081,6 +15093,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d046e1f8307dfaa428fe724b1d8abec5, type: 3}
+--- !u!114 &1694763641 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 55706841155257416, guid: 03947798d529d4c429cdb13912599129, type: 3}
+  m_PrefabInstance: {fileID: 1316459837}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72c12ec3881ac1b478a709250f5ef16c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CreatureAnim
 --- !u!1 &1751927740
 GameObject:
   m_ObjectHideFlags: 0
@@ -15179,6 +15202,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 687265852354754445, guid: d046e1f8307dfaa428fe724b1d8abec5, type: 3}
+      propertyPath: m_Color.b
+      value: 0.5019608
+      objectReference: {fileID: 0}
+    - target: {fileID: 687265852354754445, guid: d046e1f8307dfaa428fe724b1d8abec5, type: 3}
+      propertyPath: m_Color.g
+      value: 0.78431374
+      objectReference: {fileID: 0}
+    - target: {fileID: 687265852354754445, guid: d046e1f8307dfaa428fe724b1d8abec5, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2289615129146394806, guid: d046e1f8307dfaa428fe724b1d8abec5, type: 3}
+      propertyPath: m_Color.b
+      value: 0.5019608
+      objectReference: {fileID: 0}
+    - target: {fileID: 2289615129146394806, guid: d046e1f8307dfaa428fe724b1d8abec5, type: 3}
+      propertyPath: m_Color.g
+      value: 0.78431374
+      objectReference: {fileID: 0}
+    - target: {fileID: 2289615129146394806, guid: d046e1f8307dfaa428fe724b1d8abec5, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4053194467840551451, guid: d046e1f8307dfaa428fe724b1d8abec5, type: 3}
       propertyPath: Target
       value: 
@@ -15189,11 +15236,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6604018083995816226, guid: d046e1f8307dfaa428fe724b1d8abec5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.92
+      value: -9
       objectReference: {fileID: 0}
     - target: {fileID: 6604018083995816226, guid: d046e1f8307dfaa428fe724b1d8abec5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.98
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 6604018083995816226, guid: d046e1f8307dfaa428fe724b1d8abec5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -15248,7 +15295,7 @@ GameObject:
   - component: {fileID: 1893480046}
   m_Layer: 0
   m_Name: Door1
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
