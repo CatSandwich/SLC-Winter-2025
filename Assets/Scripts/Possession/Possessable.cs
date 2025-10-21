@@ -19,6 +19,7 @@ public class Possessable : MonoBehaviour
 
     public RenderTexture PreviewTexture { get; private set; }
     private Possessable _possessedBy;
+    public CreatureAnim possessedAnim;
 
     private void Awake()
     {
@@ -53,5 +54,7 @@ public class Possessable : MonoBehaviour
         {
             mono.enabled = isPossessed;
         }
+
+        possessedAnim.BecomePossessed(isPossessed);
     }
 }

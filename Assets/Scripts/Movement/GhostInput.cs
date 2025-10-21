@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class GhostInput : MonoBehaviour
 {
-    public float movementSpeed; 
+    public float movementSpeed;
+    public CreatureAnim ghostAnim;
 
     private void Update()
     {
@@ -18,12 +19,19 @@ public class GhostInput : MonoBehaviour
 
         if (Input.GetKey(KeyCode.A))
         {
+            ghostAnim.Move(true, 0);
             transform.position += Vector3.left * movementSpeed * Time.deltaTime;
         }
 
         if (Input.GetKey(KeyCode.D))
         {
+            ghostAnim.Move(true, 1);
             transform.position += Vector3.right * movementSpeed * Time.deltaTime;
+        }
+
+        if (!Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D))
+        {
+            ghostAnim.Move(false, 0);
         }
     }
 }
