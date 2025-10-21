@@ -121,12 +121,12 @@ TextureImporter:
       name: giant-spritesheet_0
       rect:
         serializedVersion: 2
-        x: 31
+        x: 0
         y: 0
-        width: 450
-        height: 753
+        width: 512
+        height: 768
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -143,12 +143,12 @@ TextureImporter:
       name: giant-spritesheet_1
       rect:
         serializedVersion: 2
-        x: 543
+        x: 512
         y: 0
-        width: 450
-        height: 753
+        width: 512
+        height: 768
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -165,12 +165,12 @@ TextureImporter:
       name: giant-spritesheet_2
       rect:
         serializedVersion: 2
-        x: 1055
+        x: 1024
         y: 0
-        width: 450
-        height: 737
+        width: 512
+        height: 768
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -187,12 +187,12 @@ TextureImporter:
       name: giant-spritesheet_3
       rect:
         serializedVersion: 2
-        x: 1567
+        x: 1536
         y: 0
-        width: 482
-        height: 737
+        width: 512
+        height: 768
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -209,12 +209,12 @@ TextureImporter:
       name: giant-spritesheet_4
       rect:
         serializedVersion: 2
-        x: 2079
+        x: 2048
         y: 0
-        width: 450
-        height: 753
+        width: 512
+        height: 768
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -231,12 +231,12 @@ TextureImporter:
       name: giant-spritesheet_5
       rect:
         serializedVersion: 2
-        x: 2591
+        x: 2560
         y: 0
-        width: 450
-        height: 737
+        width: 512
+        height: 768
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -253,12 +253,12 @@ TextureImporter:
       name: giant-spritesheet_6
       rect:
         serializedVersion: 2
-        x: 3103
+        x: 3072
         y: 0
-        width: 450
+        width: 512
         height: 768
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -275,7 +275,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 89faa21ab5bb2784eb62d4d9a71ab136
     internalID: 0
     vertices: []
     indices: 
@@ -283,7 +283,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":512.0,"y":768.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       giant-spritesheet_0: 945818309993225610
       giant-spritesheet_1: 4234613636614447896
