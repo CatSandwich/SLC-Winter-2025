@@ -11,7 +11,6 @@ public class PossessionStack : MonoBehaviour
     public KeyCode UnpossessKey = KeyCode.Escape;
     public ParticleSystem ZapParticles;
     public float ZapLength;
-    public float DestroyDelay;
 
     public void Push(Possessable possessable)
     {
@@ -33,10 +32,10 @@ public class PossessionStack : MonoBehaviour
         }
 
         Possessable current = Stack.Pop();
+        Possessable last = Stack.Peek();
         current.PossessionEnded.Invoke();
-        Stack.Peek().PossessionStarted.Invoke();
-
-        StartCoroutine(Zap(current.transform.position, Stack.Peek().transform.position));
+        last.PossessionStarted.Invoke();
+        StartCoroutine(Zap(current.transform.position, last.transform.position));
     }
 
     private IEnumerator Zap(Vector3 from, Vector3 to)
@@ -57,7 +56,7 @@ public class PossessionStack : MonoBehaviour
 
         clone.Stop();
         yield return new WaitForSeconds(clone.main.startLifetime.constant);
-        Destroy(clone);
+        Destroy(clone.gameObject);
     }
 
     private void Start()
