@@ -10,5 +10,11 @@ namespace Assets.Scripts
             component = go.GetComponentInChildren<T>();
             return component;
         }
+
+        public static void SetStartLifetimeMultiplier(this ParticleSystem particleSystem, float multiplier)
+        {
+            ParticleSystem.MainModule main = particleSystem.main;
+            main.startLifetimeMultiplier = multiplier;
+        }
     }
 }
