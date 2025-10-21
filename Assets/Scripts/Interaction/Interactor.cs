@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class Interactor : MonoBehaviour
 {
+    public bool CanPressButton;
+
     private List<Interactable> Overlapping { get; } = new();
 
     private void Update()
@@ -20,7 +22,11 @@ public class Interactor : MonoBehaviour
         if (other.gameObject.TryGetComponentInChildren(out Interactable interactable))
         {
             Overlapping.Add(interactable);
-            Debug.Log("Can interact: ", interactable);
+        }
+
+        if (CanPressButton && other.gameObject.TryGetComponentInChildren(out Button button))
+        {
+            button.Overlaps++;
         }
     }
 
@@ -29,7 +35,11 @@ public class Interactor : MonoBehaviour
         if (other.gameObject.TryGetComponentInChildren(out Interactable interactable))
         {
             Overlapping.Remove(interactable);
-            Debug.Log("Can no longer interact: ", interactable);
+        }
+
+        if (CanPressButton && other.gameObject.TryGetComponentInChildren(out Button button))
+        {
+            button.Overlaps--;
         }
     }
 }
