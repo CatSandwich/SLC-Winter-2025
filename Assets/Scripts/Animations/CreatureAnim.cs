@@ -15,7 +15,7 @@ public class CreatureAnim : MonoBehaviour
     }
 
     // Test for jumping animation.
-    public void Jump(bool isGrounded)
+    public void Jump(bool isGrounded, float jumpPower)
     {
         anim.SetBool("isGrounded", isGrounded);
     }
@@ -34,19 +34,82 @@ public class CreatureAnim : MonoBehaviour
         anim.SetBool("isMoving", isMoving);
 
         // Test for walking sound effects.
-        if (isMoving && anim.GetBool("isGrounded") && speed == 0)
+        switch (speed)
+        {
+            case 4: // Giant
+                if (isMoving && anim.GetBool("isGrounded"))
+                {
+                    if (timer == 0)
+                    {
+                        int randNum = Random.Range(0, 3);
+                        SoundManager.instance.PlaySFX(SoundManager.instance.audioClips[randNum], SoundManager.instance.sfxSource, Random.Range(0.4f, 0.6f));
+                    }
+                    timer += Time.deltaTime;
+                    if (timer > 3f / 6)
+                    {
+                        timer = 0;
+                    }
+                }
+                break;
+
+            case 6: // Player
+                if (isMoving && anim.GetBool("isGrounded"))
+                {
+                    if (timer == 0)
+                    {
+                        int randNum = Random.Range(0, 3);
+                        SoundManager.instance.PlaySFX(SoundManager.instance.audioClips[randNum], SoundManager.instance.sfxSource, Random.Range(0.9f, 1.1f));
+                    }
+                    timer += Time.deltaTime;
+                    if (timer > 3f / 6)
+                    {
+                        timer = 0;
+                    }
+                }
+                break;
+            
+            case 7: // Skeleton
+                if (isMoving && anim.GetBool("isGrounded"))
+                {
+                    if (timer == 0)
+                    {
+                        int randNum = Random.Range(0, 3);
+                        SoundManager.instance.PlaySFX(SoundManager.instance.audioClips[randNum], SoundManager.instance.sfxSource, Random.Range(1.4f, 1.6f));
+                    }
+                    timer += Time.deltaTime;
+                    if (timer > 3f / 12)
+                    {
+                        timer = 0;
+                    }
+                }
+                break;
+
+            case 8: // Rat
+                if (isMoving && anim.GetBool("isGrounded"))
+                {
+                    if (timer == 0)
+                    {
+                        int randNum = Random.Range(4, 7);
+                        SoundManager.instance.PlaySFX(SoundManager.instance.audioClips[randNum], SoundManager.instance.sfxSource, Random.Range(2.4f, 2.6f));
+                    }
+                    timer += Time.deltaTime;
+                    if (timer > 3f / 24)
+                    {
+                        timer = 0;
+                    }
+                }
+                break;
+
+            default:
+                if (isMoving && anim.GetBool("isGrounded"))
+                {
+                    timer = 0;
+                }
+                break;
+        }
+        if (!isMoving || !anim.GetBool("isGrounded"))
         {
             timer = 0;
-        }
-        else if (isMoving && anim.GetBool("isGrounded") && speed == 6)
-        {
-            timer += Time.deltaTime;
-            if (timer > 3f / speed)
-            {
-                int randNum = Random.Range(0, 3);
-                SoundManager.instance.PlaySFX(SoundManager.instance.audioClips[randNum], SoundManager.instance.sfxSource);
-                timer = 0;
-            }
         }
     }
 }

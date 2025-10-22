@@ -36,6 +36,7 @@ public class PossessionStack : MonoBehaviour
         current.PossessionEnded.Invoke();
         last.PossessionStarted.Invoke();
         StartCoroutine(Zap(current.transform.position, last.transform.position));
+        SoundManager.instance.PlaySFX(SoundManager.instance.audioClips[8], SoundManager.instance.possessSource, Random.Range(0.60f, 0.80f));
     }
 
     private IEnumerator Zap(Vector3 from, Vector3 to)

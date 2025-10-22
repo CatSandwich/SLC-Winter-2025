@@ -4,6 +4,7 @@ public class SoundManager : MonoBehaviour
 {
     public AudioSource musicSource;
     public AudioSource sfxSource;
+    public AudioSource possessSource;
     public AudioClip[] audioClips;
 
     public static SoundManager instance = null;
@@ -22,9 +23,9 @@ public class SoundManager : MonoBehaviour
         DontDestroyOnLoad(this);
     }
 
-    public void PlaySFX(AudioClip clip, AudioSource source)
+    public void PlaySFX(AudioClip clip, AudioSource source, float pitchVariation)
     {
-        source.pitch = Random.Range(0.9f, 1.1f);
+        source.pitch = pitchVariation;
         source.PlayOneShot(clip);
     }
 }

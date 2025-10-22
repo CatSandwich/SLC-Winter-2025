@@ -10,6 +10,7 @@ public class PossessionPedestal : MonoBehaviour
     public void OnInteract(Interactor interactor)
     {
         _stack.Push(Target);
+        SoundManager.instance.PlaySFX(SoundManager.instance.audioClips[8], SoundManager.instance.possessSource, Random.Range(0.90f, 1.10f));
     }
 
     private void Start()

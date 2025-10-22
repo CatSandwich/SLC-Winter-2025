@@ -41,6 +41,7 @@ public class Interactor : MonoBehaviour
         if (CanBreakWalls && collision.gameObject.TryGetComponentInChildren(out BreakableWall breakableWall))
         {
             Destroy(collision.gameObject);
+            SoundManager.instance.PlaySFX(SoundManager.instance.audioClips[20], SoundManager.instance.sfxSource, Random.Range(0.7f, 0.9f));
         }
     }
 

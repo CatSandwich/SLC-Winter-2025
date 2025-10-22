@@ -146,6 +146,8 @@ GameObject:
   - component: {fileID: 247656810544895013}
   - component: {fileID: 6658419471649642665}
   - component: {fileID: 3494371282153748284}
+  - component: {fileID: 4650255621575760285}
+  - component: {fileID: 6353827489961938117}
   m_Layer: 3
   m_Name: Rat
   m_TagString: Player
@@ -359,6 +361,7 @@ MonoBehaviour:
   EnableWhilePossessedComponents:
   - {fileID: 5738894191600895186}
   - {fileID: 3494371282153748284}
+  - {fileID: 4650255621575760285}
   PossessionStarted:
     m_PersistentCalls:
       m_Calls: []
@@ -395,6 +398,69 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Interactor
   CanPressButton: 1
   CanBreakWalls: 0
+--- !u!114 &4650255621575760285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1192516695569518321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 592e58532954db74c890e6b127699fb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::JumpScript
+  Rigidbody: {fileID: 3589442036275702998}
+  JumpPower: 3
+  anim: {fileID: 4638953524167641126}
+  GroundCheck: {fileID: 6149006219702335148}
+  JumpKey: 32
+--- !u!61 &6353827489961938117
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1192516695569518321}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.75, y: 0.375}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.75, y: 0.375}
+  m_EdgeRadius: 0
 --- !u!1 &3256328933955921206
 GameObject:
   m_ObjectHideFlags: 0

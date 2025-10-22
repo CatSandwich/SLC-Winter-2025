@@ -11,6 +11,7 @@ public class Lever : MonoBehaviour
     public void Toggle()
     {
         IsOn = !IsOn;
+        SoundManager.instance.PlaySFX(SoundManager.instance.audioClips[18], SoundManager.instance.sfxSource, Random.Range(0.9f, 1.1f));
 
         if (IsOn)
         {

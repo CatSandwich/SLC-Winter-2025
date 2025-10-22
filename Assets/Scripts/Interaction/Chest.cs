@@ -17,6 +17,8 @@ public class Chest : MonoBehaviour
     public GameObject TextObject;
     public float TextSpeed;
 
+    public Exit exit;
+
     private bool _isOpen;
     private TextMeshProUGUI _text;
 
@@ -43,6 +45,7 @@ public class Chest : MonoBehaviour
 
     private IEnumerator FlyRoutine()
     {
+        SoundManager.instance.PlaySFX(SoundManager.instance.audioClips[21], SoundManager.instance.musicSource, 1.0f);
         Vector3 startScale = Picture.transform.localScale;
         Picture.transform.position = Spline.EvaluatePosition(0f);
         float length = Spline.CalculateLength();
@@ -83,8 +86,8 @@ public class Chest : MonoBehaviour
             _text.maxVisibleCharacters = (int)chars;
         }
 
-        yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Return));
+        yield return new WaitForSeconds(5.0f);
 
-        SceneManager.LoadScene("Level 1");
+        StartCoroutine(exit.Endgame());
     }
 }

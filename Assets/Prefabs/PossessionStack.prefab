@@ -46,10 +46,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PossessionStack
   StartingEntity: {fileID: 0}
-  UnpossessKey: 27
+  UnpossessKey: 103
   ZapParticles: {fileID: 4921127160033486598}
   ZapLength: 0.1
-  DestroyDelay: 1
 --- !u!1 &4113427333318800670
 GameObject:
   m_ObjectHideFlags: 0
@@ -4853,7 +4852,7 @@ ParticleSystemRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_RenderMode: 0
   m_MeshDistribution: 0
   m_SortMode: 0

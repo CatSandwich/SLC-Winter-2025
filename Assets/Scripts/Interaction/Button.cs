@@ -9,6 +9,8 @@ public class Button : MonoBehaviour
     public UnityEvent Pressed;
     public UnityEvent Released;
 
+    float elapsedTime = 0;
+
     public int Overlaps
     {
         get => _overlaps;
@@ -32,6 +34,7 @@ public class Button : MonoBehaviour
     private void Press()
     {
         Pressed.Invoke();
+        SoundManager.instance.PlaySFX(SoundManager.instance.audioClips[18], SoundManager.instance.sfxSource, Random.Range(1.6f, 1.8f));
 
         foreach (GameObject obj in EnableWhileReleased)
         {
