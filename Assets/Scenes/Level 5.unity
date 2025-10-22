@@ -21706,6 +21706,14 @@ PrefabInstance:
       propertyPath: Released.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 4202460263148872447, guid: 42ea76fd3fc26014fb1c190ab484a532, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4475614573358988755, guid: 42ea76fd3fc26014fb1c190ab484a532, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4597544701073744432, guid: 42ea76fd3fc26014fb1c190ab484a532, type: 3}
       propertyPath: m_Name
       value: Button (1)
@@ -22977,6 +22985,14 @@ PrefabInstance:
     - target: {fileID: 667622500193506541, guid: 42ea76fd3fc26014fb1c190ab484a532, type: 3}
       propertyPath: Released.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4202460263148872447, guid: 42ea76fd3fc26014fb1c190ab484a532, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4475614573358988755, guid: 42ea76fd3fc26014fb1c190ab484a532, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4597544701073744432, guid: 42ea76fd3fc26014fb1c190ab484a532, type: 3}
       propertyPath: m_Name

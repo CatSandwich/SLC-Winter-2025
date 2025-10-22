@@ -32,6 +32,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6039000188192796373, guid: 03947798d529d4c429cdb13912599129, type: 3}
+      propertyPath: HorizontalSpeed
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 6758400738000601640, guid: 03947798d529d4c429cdb13912599129, type: 3}
       propertyPath: CanBreakWalls
       value: 1

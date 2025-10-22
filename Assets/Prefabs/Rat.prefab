@@ -326,7 +326,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 33e13e96c32e26149879cbf25f375632, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HorizontalMovement
-  HorizontalSpeed: 6
+  HorizontalSpeed: 8
   anim: {fileID: 4638953524167641126}
 --- !u!114 &4638953524167641126
 MonoBehaviour:
@@ -380,7 +380,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FasterDown
   Rigidbody: {fileID: 3589442036275702998}
   UpGravityScale: 1
-  DownGravityScale: 2
+  DownGravityScale: 1
 --- !u!114 &3494371282153748284
 MonoBehaviour:
   m_ObjectHideFlags: 0

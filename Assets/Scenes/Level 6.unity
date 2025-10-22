@@ -20574,6 +20574,14 @@ PrefabInstance:
       propertyPath: 'EnableWhileReleased.Array.data[1]'
       value: 
       objectReference: {fileID: 156095230}
+    - target: {fileID: 4202460263148872447, guid: 42ea76fd3fc26014fb1c190ab484a532, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4475614573358988755, guid: 42ea76fd3fc26014fb1c190ab484a532, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4597544701073744432, guid: 42ea76fd3fc26014fb1c190ab484a532, type: 3}
       propertyPath: m_Name
       value: Button
