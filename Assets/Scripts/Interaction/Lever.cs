@@ -6,6 +6,7 @@ public class Lever : MonoBehaviour
     public bool IsOn;
     public UnityEvent TurnedOn;
     public UnityEvent TurnedOff;
+    public Animator leverAnim;
 
     public void Toggle()
     {
@@ -14,10 +15,12 @@ public class Lever : MonoBehaviour
         if (IsOn)
         {
             TurnedOn.Invoke();
+            leverAnim.SetBool("isOn", true);
         }
         else
         {
             TurnedOff.Invoke();
+            leverAnim.SetBool("isOn", false);
         }
     }
 }
