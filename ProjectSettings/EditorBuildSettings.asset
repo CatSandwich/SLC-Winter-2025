@@ -38,6 +38,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level 10.unity
     guid: 24fd5128d0fb79649b1e806cfd46f779
+  - enabled: 1
+    path: Assets/Scenes/Level 11 Heist's Finale.unity
+    guid: 3afb5b4dac46a964382cdd654ce07dc2
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: cda0213a4deb6aa4e935fb07c954614a
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
