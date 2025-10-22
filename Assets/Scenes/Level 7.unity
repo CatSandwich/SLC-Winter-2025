@@ -128,12 +128,40 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 687265852354754445, guid: d046e1f8307dfaa428fe724b1d8abec5, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 687265852354754445, guid: d046e1f8307dfaa428fe724b1d8abec5, type: 3}
+      propertyPath: m_Color.b
+      value: 0.5019608
+      objectReference: {fileID: 0}
+    - target: {fileID: 687265852354754445, guid: d046e1f8307dfaa428fe724b1d8abec5, type: 3}
+      propertyPath: m_Color.g
+      value: 0.78431374
+      objectReference: {fileID: 0}
+    - target: {fileID: 687265852354754445, guid: d046e1f8307dfaa428fe724b1d8abec5, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 687265852354754445, guid: d046e1f8307dfaa428fe724b1d8abec5, type: 3}
       propertyPath: m_SortingOrder
-      value: -1
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2289615129146394806, guid: d046e1f8307dfaa428fe724b1d8abec5, type: 3}
+      propertyPath: m_Color.b
+      value: 0.5019608
+      objectReference: {fileID: 0}
+    - target: {fileID: 2289615129146394806, guid: d046e1f8307dfaa428fe724b1d8abec5, type: 3}
+      propertyPath: m_Color.g
+      value: 0.78431374
+      objectReference: {fileID: 0}
+    - target: {fileID: 2289615129146394806, guid: d046e1f8307dfaa428fe724b1d8abec5, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2289615129146394806, guid: d046e1f8307dfaa428fe724b1d8abec5, type: 3}
       propertyPath: m_SortingOrder
-      value: -1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4053194467840551451, guid: d046e1f8307dfaa428fe724b1d8abec5, type: 3}
       propertyPath: Target
@@ -876,6 +904,14 @@ PrefabInstance:
     - target: {fileID: 1192516695569518321, guid: bf8e2db6e6cd05b4083517cf386ce5cb, type: 3}
       propertyPath: m_Name
       value: Rat
+      objectReference: {fileID: 0}
+    - target: {fileID: 2680639090353412637, guid: bf8e2db6e6cd05b4083517cf386ce5cb, type: 3}
+      propertyPath: m_Color.b
+      value: 0.5019608
+      objectReference: {fileID: 0}
+    - target: {fileID: 2680639090353412637, guid: bf8e2db6e6cd05b4083517cf386ce5cb, type: 3}
+      propertyPath: m_Color.g
+      value: 0.78431374
       objectReference: {fileID: 0}
     - target: {fileID: 7658847007122264768, guid: bf8e2db6e6cd05b4083517cf386ce5cb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -28029,11 +28065,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 687265852354754445, guid: d046e1f8307dfaa428fe724b1d8abec5, type: 3}
       propertyPath: m_SortingOrder
-      value: -1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2289615129146394806, guid: d046e1f8307dfaa428fe724b1d8abec5, type: 3}
       propertyPath: m_SortingOrder
-      value: -1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4053194467840551451, guid: d046e1f8307dfaa428fe724b1d8abec5, type: 3}
       propertyPath: Target
