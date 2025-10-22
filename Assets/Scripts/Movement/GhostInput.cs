@@ -19,19 +19,19 @@ public class GhostInput : MonoBehaviour
 
         if (Input.GetKey(KeyCode.A))
         {
-            ghostAnim.Move(true, 0);
+            ghostAnim.Move(true, 0, 0);
             transform.position += Vector3.left * movementSpeed * Time.deltaTime;
         }
 
         if (Input.GetKey(KeyCode.D))
         {
-            ghostAnim.Move(true, 1);
+            ghostAnim.Move(true, 1, 0);
             transform.position += Vector3.right * movementSpeed * Time.deltaTime;
         }
 
         if (!Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D))
         {
-            ghostAnim.Move(false, 0);
+            ghostAnim.Move(false, 0, 0);
         }
     }
 }
