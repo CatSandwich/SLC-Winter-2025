@@ -21158,6 +21158,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Exit
       objectReference: {fileID: 0}
+    - target: {fileID: 4639710898998177247, guid: a96c9c4fb43fe0546bbfd6ee0ae79de7, type: 3}
+      propertyPath: NextScene
+      value: Level 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8689436754654338767, guid: a96c9c4fb43fe0546bbfd6ee0ae79de7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.19
